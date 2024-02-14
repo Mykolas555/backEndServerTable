@@ -12,7 +12,7 @@ export const getAllExpences = async () => {
     }
 };
 
-export const addExpence = async (data) => {
+export const addExpence = async (data: string) => {
     try {
         const response = await fetch(api, {
             method: 'POST',
@@ -29,7 +29,7 @@ export const addExpence = async (data) => {
     }
 };
 
-export const deleteExpence = async (expenceId) => {
+export const deleteExpence = async (expenceId: string) => {
     try {
       const response = await fetch(`${api}/${expenceId}`, {
         method: 'DELETE',
@@ -45,7 +45,7 @@ export const deleteExpence = async (expenceId) => {
     }
   };
 
-export const updateExpence = async (expenceId, expenceData) => {
+export const updateExpence = async (expenceId: string, expenceData: string) => {
     try {
       const response = await fetch(`${api}/${expenceId}`, {
         method: 'PATCH',
@@ -68,7 +68,7 @@ export const updateExpence = async (expenceId, expenceData) => {
   };
   
 
-  export const getExpencesByDate = async (firstDate, secondDate) => {
+  export const getExpencesByDate = async (firstDate: Date, secondDate: Date) => {
     try {
       const response = await fetch(`${api}/date-range/${firstDate}/${secondDate}`, {
         method: 'GET',
