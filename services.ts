@@ -1,5 +1,3 @@
-//service.tsx
-
 const api = 'http://localhost:8886/api/v1/expences'
 
 export const getAllExpences = async () => {

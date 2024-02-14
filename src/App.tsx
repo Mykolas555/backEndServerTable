@@ -10,7 +10,6 @@ function App() {
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <Header/>
       <TableC/>
-      
     </ThemeProvider>
     </>
   )

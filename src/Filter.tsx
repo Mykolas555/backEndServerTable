@@ -34,7 +34,7 @@ const Filter = () => {
                   rules={{ required: 'Expense date is required' }}
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Date 1</FormLabel>
+                      <FormLabel>Enter date from</FormLabel>
                       <FormControl>
                         <Input type="date" {...field} />
                       </FormControl>
@@ -48,7 +48,7 @@ const Filter = () => {
                   rules={{ required: 'Expense date is required' }}
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Date 2</FormLabel>
+                      <FormLabel>Enter date to</FormLabel>
                       <FormControl>
                         <Input type="date" {...field} />
                       </FormControl>
@@ -64,8 +64,7 @@ const Filter = () => {
         <p className="mt-4">Total: {totalExpence} $</p>
         {sortedExpence?.map((expe, index) => (
           <div key={index} className="mt-2">
-            <p>{expe.expence} {expe.sum} $</p>
-            
+            <p>{expe.expence} : {expe.sum} $</p>
           </div>
         ))}
       </SheetContent>
