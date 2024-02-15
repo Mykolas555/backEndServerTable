@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <section className="flex justify-between items-center mb-8">
         <div>
-            <h1 className="text-2xl font-bold">Expence Tracker App</h1>
+          <h1 className="text-2xl font-bold">Expence Tracker App</h1>
         </div>
         <div className='flex mr-2'>
           <div>
